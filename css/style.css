@@ -9,9 +9,10 @@
   --font-secondary: 'Arvo', serif;
   --font-code: 'Roboto', monospace;
   --bg-color: #00163f;
-  --font-color: #ffffff;
-  --btn-bg-color: #ffffff;
-  --accent-color: #be7efe;
+  --font-color: #000000;
+  --btn-bg-color: #ff0000;
+  --btn-font-color:#fff;
+  --accent-color: #ffffff;
   --header-shadow: #000 0px 0px 5px;
 }
 
@@ -22,7 +23,7 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  background-color: #fff;
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -41,6 +42,7 @@ body {
 /* HEADER */
 
 header {
+  background-color: #00163f;
   box-shadow: var(--header-shadow);
 }
 
@@ -69,7 +71,6 @@ header .container {
   font-size: 1rem;
   text-transform: capitalize;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px 0 0 var(--accent-color);
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -103,11 +104,13 @@ section {
   justify-content: center;
   align-items: center;
   height: 100%;
+ 
 }
 
 .countdown ul {
   display: flex;
-  gap: 2rem
+  gap: 2rem;
+  
 }
 .countdown .clock-item {
   list-style: none;
@@ -126,6 +129,7 @@ section {
   text-align: center;
   line-height: 1;
   border-radius: 4px 4px 0 0;
+  border: 1px solid #ff0000;
 }
 .countdown .clock-item .count-text {
   background: var(--btn-bg-color);
